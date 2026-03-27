@@ -8,7 +8,8 @@ Diversos passos e abordagens deram errado no processo de modelagem, incluindo:
  - Testes com múltiplos otimizadores.
  - Uso de diferentes funções de loss.
  - Mudança da variável alvo, tentando prever a flutuação/delta em vez do valor absoluto.
-
+ - Variação da janela de observação, testando desde janelas curtas de 10 dias até longas de 120 dias. 
+ - Taxas agressivas de Dropout e penalidades L2. 
 
 Em outras iterações, o modelo acabava penalizado e passava a prever apenas a média histórica dos preços, criando uma reta inútil.
 
